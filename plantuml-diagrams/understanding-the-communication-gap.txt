@@ -1,0 +1,37 @@
+@startuml
+!theme plain
+skinparam backgroundColor #FEFEFE
+
+title Understanding the Communication Gap
+
+rectangle "What Others See\n(Objective Reality)" as external {
+  component "No speech" #Pink
+  component "Limited gestures" #Pink
+  component "Unusual behaviors" #Pink
+}
+
+rectangle "What's Inside\n(Subjective Reality)" as internal {
+  component "Rich thoughts" #LightGreen
+  component "Deep feelings" #LightGreen
+  component "Full identity" #LightGreen
+}
+
+internal -[hidden]right-> external
+note on link : Traditional systems\nonly measure this side
+
+rectangle "The Puppet Method Bridge" as bridge #LightBlue {
+  component "Puppet expressions"
+  component "Design choices"
+  component "Interaction patterns"
+}
+
+internal --> bridge : Expresses through
+bridge --> external : Makes visible
+
+note bottom
+  The puppet becomes a translator between
+  the rich internal world and what others
+  can observe and understand
+end note
+
+@enduml
